@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Transcript Summarization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<h1>Youtube Transcript Summarization</h1>
+
+<form method="POST" action="/generate">
+
+    <input class="y-link" type="text" name="y-link" placeholder="paste the youtube link">
+    <input type="submit" name="generate" value="generate">
+    {% if summary %}
+    <h1>The Summary is :  {{ summary }}</h1>
+    {% endif %}
+    {% if message %}
+    <h1>{{ message }}</h1>
+    {% endif %}
+</form>
+<br><br>
+
+</body>
+</html>

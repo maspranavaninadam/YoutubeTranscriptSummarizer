@@ -1,0 +1,50 @@
+body{
+    background-color: #e8f3f8;
+    margin-bottom: 25px;
+}
+h1{
+    text-align: center;
+    color: coral;
+}
+
+input{
+    padding: 10px;
+    font-size: inherit;
+    display: inline-block;
+}
+input[type="text"]{
+    display: block;
+    margin-bottom: 25px;
+    width: 300px;
+    border: 1px solid coral;
+    background: rgb(235, 231, 229);
+    display: inline-block;
+}
+input[type="submit"]{
+    align-content: center;
+    width: 100px;
+    height: 40px;
+    border: 1px solid coral;
+    background: coral;
+    color: whitesmoke;
+}
+input:focus{
+    background: white;
+}
+input[type="submit"]:focus{
+    align-content: center;
+    width: 100px;
+    height: 40px;
+    border: 1px solid coral;
+    background: whitesmoke;
+    color: coral;
+}
+h2{
+    text-align: center;
+    color: crimson;
+}
+p{
+    text-align: center;
+    font-size: 1rem;
+    color: darkslateblue;
+}
